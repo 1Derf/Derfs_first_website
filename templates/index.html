@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derf's first website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      color: #f2f2f2;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #262626;
+      color: #f2f2f2;
+      padding: 1rem;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #f2f2f2;
+    }
+
+    .nav-menu {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-menu a {
+      color: #f2f2f2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+      color: #999999;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+      background-image: url('https://via.placeholder.com/1920x1080');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 1rem;
+      text-align: center;
+      color: #f2f2f2;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Features Section Styles */
+    .features {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .feature-item {
+      display: inline-block;
+      width: 30%;
+      margin: 0 1rem;
+      vertical-align: top;
+    }
+
+    .feature-item i {
+      font-size: 2rem;
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+
+    .feature-item h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-item p {
+      color: #cccccc;
+    }
+
+    /* Contact Section Styles */
+    .contact {
+      background-color: #1a1a1a;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact input,
+    .contact textarea {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      background-color: #333333;
+      color: #f2f2f2;
+    }
+
+    .contact button {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #262626;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="logo">Derf's Website</a>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Derf's first Website</h1>
+        <p>Written in Python, with Pycharmand and Flask.</p>
+        <a href="#" class="cta-button">Code More</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-item">
+        <i class="fas fa-code"></i>
+        <h3>Cutting-Edge Technology</h3>
+        <p>Our website is built using me a junior python coder.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-users"></i>
+        <h3>Exceptional Customer Service</h3>
+        <p>We prioritize our customers and offer top-notch support.</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-rocket"></i>
+        <h3>Rapid Growth</h3>
+        <p>We are constantly expanding our offerings to better serve you.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Derf Website. All rights reserved.</p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <script>
+    // Add your JavaScript code here
+  </script>
+</body>
+</html>
